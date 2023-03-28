@@ -1,57 +1,45 @@
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
-import styles from "@/styles/pizzas.module.scss";
+import styles from "@/styles/films.module.scss";
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    "https://my-json-server.typicode.com/momonastia/nextjs-restaurant/items"
+    "https://api.themoviedb.org/3/movie/550?api_key=9b17c70efd646681f04f06f1a3fc40ed"
   );
   const data = await res.json();
 
   return {
-    props: { pizzas: data },
+    props: { films: data },
   };
 };
 
-const Pizza = ({ pizzas }) => {
-  const menuVariants = {
-    visible: (i) => ({
-      opacity: 1,
-      transition: {
-        delay: i * 0.5,
-      },
-    }),
-    hidden: { opacity: 0 },
-  };
-
+const Films = ({ films }) => {
+  console.log(films);
   return (
     <>
       <Head>
-        <title>Pizza restaurant | Our menu </title>
-        <meta name="title" content="pizza restaurant" />
+        <title> Cinema | Our films </title>
+        <meta name="title" content="cinema films" />
       </Head>
       <div>
-        <h1 className={styles.cardsTitle}>Our pizzas</h1>
-        <div className={styles.cardsContainer}>
-          {pizzas.map((pizza, i) => {
-            return (
-              <Link href={`/products/${pizza.id}`} key={pizza.id}>
-                <motion.div
+        <h1 className={styles.cardsTitle}>Our films</h1>
+        {/*    <div className={styles.cardsContainer}>
+          {films.map((film, i) => {
+            return {
+              <Link href={`/films/${film.id}`} key={pizza.id}>
+                <div
                   className={styles.pizzaCard}
-                  variants={menuVariants}
-                  initial="hidden"
-                  animate="visible"
-                  custom={i}
+                  
                 >
                   <div className={styles.imageContainer}>
-                    <Image
+                   <Image
                       src={`${pizza.image}`}
                       alt={`${pizza.name}`}
                       width="250"
                       height="150"
                       Layout="responsive"
-                    ></Image>
+                    ></Image> 
                   </div>
                   <div className={styles.pizzaInfo}>
                     <h4>{pizza.name}</h4>
@@ -61,14 +49,14 @@ const Pizza = ({ pizzas }) => {
                         : pizza.desc}{" "}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               </Link>
-            );
+            };
           })}
-        </div>
+        </div> */}
       </div>
     </>
   );
 };
 
-export default Pizza;
+export default Films;
