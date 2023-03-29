@@ -3,11 +3,16 @@ import Image from "next/image";
 
 export const getStaticPaths = async () => {
   const res = await fetch(
-    "https://api.themoviedb.org/3/movie/now_playing?api_key=9b17c70efd646681f04f06f1a3fc40ed&page=1"
+    "https://api.themoviedb.org/3/movie/now_playing?api_key=9b17c70efd646681f04f06f1a3fc40ed&page=1-2"
   );
   const data = await res.json();
+  const res2 = await fetch(
+    "https://api.themoviedb.org/3/movie/now_playing?api_key=9b17c70efd646681f04f06f1a3fc40ed&page=2"
+  );
+  const data2 = await res2.json();
+  const dataAll = [...data.results, ...data2.results];
 
-  const paths = data.results.map((film) => {
+  const paths = dataAll.map((film) => {
     return {
       params: { id: film.id.toString() },
     };
