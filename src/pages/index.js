@@ -1,11 +1,24 @@
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Home.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const res = await fetch(
+    "https://api.themoviedb.org/3/movie/popular?api_key=9b17c70efd646681f04f06f1a3fc40ed&language=en-US&page=1"
+  );
+  const data = await res.json();
+
+  return {
+    props: { films: data },
+  };
+};
+
+export default function Home({ films }) {
+  console.log(films);
   return (
     <>
       <Head>
@@ -14,7 +27,37 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>Main page</main>
+      <main className={styles.main}>
+        <h2>Top films</h2>
+        <div className={styles.cardsContainer}>
+          {films.results.map((film, i) => {
+            return (
+              <Link href={`/films/${film.id}`} key={film.id}>
+                <div className={styles.pizzaCard}>
+                  <div className={styles.imageContainer}>
+                    <Image
+                      src={`https://image.tmdb.org/t/p/w500${film.backdrop_path}`}
+                      alt={`${film.title}`}
+                      width="250"
+                      height="150"
+                      Layout="responsive"
+                    ></Image>
+                  </div>
+                  <div className={styles.pizzaInfo}>
+                    <h4>{film.title}</h4>
+                    <p>
+                      {film.overview.length > 50
+                        ? `${film.overview.substring(0, 50)}...`
+                        : film.overview}
+                    </p>
+                    <div>Vote: {film.vote_average}</div>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </main>
     </>
   );
 }

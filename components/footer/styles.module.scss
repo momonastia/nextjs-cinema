@@ -1,0 +1,110 @@
+.FooterMain {
+  display: flex;
+  gap: 10px;
+  color: grey;
+  font-size: 0.7rem;
+
+  .FooterContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 1;
+    width: 33%;
+    border-right: 1px solid gray;
+
+    .logo {
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffc600;
+      margin-right: 10px;
+      gap: 1rem;
+      font-family: "Comforter", cursive;
+    }
+
+    .FooterName {
+      font-size: large;
+      margin-right: 10px;
+    }
+
+    .FooterAdress {
+      width: 70%;
+      margin-right: 10px;
+    }
+  }
+
+  .FooterAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    flex-grow: 1;
+    width: 33%;
+    border-right: 1px solid gray;
+
+    h4 {
+      font-size: large;
+      margin: 0;
+    }
+
+    .division {
+      border-bottom: 1px solid gray;
+      color: grey;
+      width: 20%;
+      text-align: center;
+    }
+
+    .FooterAboutText {
+      width: 70%;
+    }
+  }
+
+  .FooterMap {
+    flex-grow: 1;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mainImage {
+      width: 100%;
+      height: fit-content;
+      margin: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.FooterSocial {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffc600;
+  gap: 2rem;
+
+  * {
+    border: 1px solid #ffc600;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+
+  *:hover {
+    cursor: pointer;
+    box-shadow: #ffc600;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 198, 0, 0.81);
+    box-shadow: 0px 0px 10px 5px rgba(255, 198, 0, 0.81);
+    transition: all 0.5s;
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
