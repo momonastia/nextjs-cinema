@@ -3,12 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
+import { Fragment } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    "https://api.themoviedb.org/3/movie/popular?api_key=9b17c70efd646681f04f06f1a3fc40ed&language=en-US&page=1"
+    "https://api.themoviedb.org/3/movie/popular?api_key=9b17c70efd646681f04f06f1a3fc40ed&language=en-US&page=2"
   );
   const data = await res.json();
 
@@ -57,6 +58,9 @@ export default function Home({ films }) {
             );
           })}
         </div>
+        <Link href="/films" className={styles.btn}>
+          Alle sale
+        </Link>
       </main>
     </>
   );

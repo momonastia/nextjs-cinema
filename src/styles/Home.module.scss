@@ -24,3 +24,22 @@
   background-color: #191919;
   border-radius: 10px;
 }
+
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto 40px;
+  background: #ffc600;
+  border-radius: 4px;
+  color: #121618;
+  text-align: center;
+  border: 1px solid #ffc600;
+}
+
+.btn:hover {
+  background: #121618;
+  color: #ffc600;
+
+  transition: all 0.5s;
+}
