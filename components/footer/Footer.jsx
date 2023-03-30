@@ -16,8 +16,7 @@ const Footer = () => {
           </div>
           <div className={styles.FooterName}>CineMille SRL</div>
           <div className={styles.FooterAdress}>
-            203 Fake St. Mountain View, San Francisco, California, USA +2 392
-            3929 210
+            203344 via Roma, Firenze, Italia, ITA +39 392 3929 210
           </div>
         </div>
         <div className={styles.FooterAbout}>
@@ -33,8 +32,8 @@ const Footer = () => {
             className={styles.mainImage}
             src="/static/images/map.png"
             alt="map"
-            width={200}
-            height={100}
+            width={100}
+            height={50}
           />
         </div>
       </section>

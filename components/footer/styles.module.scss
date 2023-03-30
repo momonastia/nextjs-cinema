@@ -1,8 +1,10 @@
 .FooterMain {
+  margin-top: 1rem;
   display: flex;
   gap: 10px;
   color: grey;
   font-size: 0.7rem;
+  height: 5rem;
 
   .FooterContacts {
     display: flex;
@@ -71,8 +73,8 @@
     align-items: center;
 
     .mainImage {
-      width: 100%;
-      height: fit-content;
+      width: fit-content;
+      height: 100%;
       margin: 10px;
 
       img {

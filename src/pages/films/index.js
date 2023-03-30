@@ -34,7 +34,7 @@ const Films = ({ filmsSala1, filmsSala2 }) => {
           {filmsSala1.map((film, i) => {
             return (
               <Link href={`/films/${film.id}`} key={film.id}>
-                <div className={styles.pizzaCard}>
+                <div className={styles.filmCard}>
                   <div className={styles.imageContainer}>
                     <Image
                       src={`https://image.tmdb.org/t/p/w500${film.backdrop_path}`}
@@ -44,7 +44,7 @@ const Films = ({ filmsSala1, filmsSala2 }) => {
                       Layout="responsive"
                     ></Image>
                   </div>
-                  <div className={styles.pizzaInfo}>
+                  <div className={styles.filmInfo}>
                     <h4>{film.title}</h4>
                     <p>
                       {film.overview.length > 50
@@ -63,7 +63,7 @@ const Films = ({ filmsSala1, filmsSala2 }) => {
           {filmsSala2.map((film, i) => {
             return (
               <Link href={`/films/${film.id}`} key={film.id}>
-                <div className={styles.pizzaCard}>
+                <div className={styles.filmCard}>
                   <div className={styles.imageContainer}>
                     <Image
                       src={`https://image.tmdb.org/t/p/w500${film.backdrop_path}`}
@@ -73,7 +73,7 @@ const Films = ({ filmsSala1, filmsSala2 }) => {
                       Layout="responsive"
                     ></Image>
                   </div>
-                  <div className={styles.pizzaInfo}>
+                  <div className={styles.filmInfo}>
                     <h4>{film.title}</h4>
                     <p>
                       {film.overview.length > 50
