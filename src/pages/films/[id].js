@@ -40,6 +40,10 @@ export const getStaticProps = async (context) => {
 const Details = ({ film }) => {
   console.log("details film >>>>", film);
 
+  const date = ["01.04-30.04", "15.03-15.05", "31.03-20.05"];
+
+  let rand = Math.floor(Math.random() * date.length);
+
   return (
     <div className={styles.singleFilm}>
       <h1>{film.original_title}</h1>
@@ -54,6 +58,7 @@ const Details = ({ film }) => {
       </div>
       <div>
         <p>{film.overview}</p>
+        <p>Date della programmazione: {date[rand]}</p>
       </div>
     </div>
   );

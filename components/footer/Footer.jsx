@@ -23,8 +23,11 @@ const Footer = () => {
           <h4>About us</h4>
           <div className={styles.division}> </div>
           <div className={styles.FooterAboutText}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-            accusantium illo mollitia dolor sapiente.
+            Il cinema “CineMille” è un esercizio storico dell’area fiorentina,
+            nonché uno dei più grandi presenti in Toscana. Dispone di 12 sale di
+            proiezione, di cui 2 in tecnologia IMAX. Le sale hanno una capienza
+            differente, con le più grandi che dispongono di 250 posti ciascuna
+            fino alle più piccole da circa 50 posti a sedere.
           </div>
         </div>
         <div className={styles.FooterMap}>
