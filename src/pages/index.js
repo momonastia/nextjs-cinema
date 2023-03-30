@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
-import { Fragment } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
