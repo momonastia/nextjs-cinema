@@ -1,3 +1,35 @@
+.detailTitle {
+  text-align: center;
+}
+
+.singleFilm {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto 40px;
+  background: #ffc600;
+  border-radius: 4px;
+  color: #121618;
+  text-align: center;
+  border: 1px solid #ffc600;
+}
+
+.btn:hover {
+  background: #121618;
+  color: #ffc600;
+
+  transition: all 0.5s;
+}
+
 .cardsTitle {
   color: #7d7d7d;
   padding-left: 1rem;
@@ -53,8 +85,6 @@
 }
 .singleFilm {
   max-width: 600px;
-  border: 1px solid rgb(240, 248, 255);
-  border-radius: 10px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -67,6 +97,9 @@
 }
 
 @media screen and (min-width: 480px) {
+  .singleFilm {
+    flex-direction: row;
+  }
   .cardsTitle {
     text-align: left;
   }

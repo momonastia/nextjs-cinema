@@ -6,6 +6,7 @@
   font-size: 0.7rem;
   height: 5rem;
   padding: 2rem;
+  align-items: flex-start;
 
   .FooterContacts {
     display: flex;
@@ -16,6 +17,7 @@
     flex-grow: 1;
     width: 33%;
     border-right: 1px solid gray;
+    margin-bottom: 1rem;
 
     .logo {
       font-size: 1.5rem;
@@ -26,10 +28,11 @@
       margin-right: 10px;
       gap: 1rem;
       font-family: "Comforter", cursive;
+      font-size: 1rem;
     }
 
     .FooterName {
-      font-size: large;
+      font-size: 1rem;
       margin-right: 10px;
     }
 
@@ -55,10 +58,7 @@
     }
 
     .division {
-      border-bottom: 1px solid gray;
-      color: grey;
-      width: 20%;
-      text-align: center;
+      display: none;
     }
 
     .FooterAboutText {
@@ -74,8 +74,8 @@
     align-items: center;
 
     .mainImage {
-      width: fit-content;
-      height: 100%;
+      width: 100%;
+      height: fit-content;
       margin: 10px;
 
       img {
@@ -86,8 +86,8 @@
 }
 
 .FooterSocial {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,4 +110,30 @@
 }
 
 @media screen and (min-width: 480px) {
+  .FooterMain {
+    .FooterContacts {
+      .logo {
+        font-size: 1.5rem;
+      }
+      .FooterAbout {
+        .division {
+          border-bottom: 1px solid gray;
+          color: grey;
+          width: 20%;
+          text-align: center;
+        }
+      }
+    }
+    .FooterMap {
+      .mainImage {
+        width: fit-content;
+        height: 100%;
+      }
+    }
+  }
+
+  .FooterSocial {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
 }
