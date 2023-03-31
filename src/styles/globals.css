@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Heebo:wght@200;300&display=swap");
+
 body {
   background-color: rgb(0, 0, 24);
   color: rgb(240, 248, 255);
+  font-family: "Comforter", cursive;
+  font-family: "Heebo", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
-

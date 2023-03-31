@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "@/styles/films.module.scss";
 import Image from "next/image";
 
@@ -45,22 +46,32 @@ const Details = ({ film }) => {
   let rand = Math.floor(Math.random() * date.length);
 
   return (
-    <div className={styles.singleFilm}>
-      <h1>{film.original_title}</h1>
-      <div className={styles.imageContainer}>
-        <Image
-          src={`https://image.tmdb.org/t/p/w500${film.backdrop_path}`}
-          alt={`${film.title}`}
-          width="250"
-          height="150"
-          Layout="responsive"
-        ></Image>
+    <>
+      <h4 className={styles.detailTitle}>Dettaglio film</h4>
+      <div className={styles.singleFilm}>
+        <div className={styles.imageContainer}>
+          <Image
+            src={`https://image.tmdb.org/t/p/w500${film.backdrop_path}`}
+            alt={`${film.title}`}
+            width="250"
+            height="150"
+            Layout="responsive"
+          ></Image>
+        </div>
+
+        <div className={styles.filmDatails}>
+          <h2>{film.original_title}</h2>
+          <p>{film.overview}</p>
+          <p>Date della programmazione: {date[rand]}</p>
+        </div>
       </div>
-      <div>
-        <p>{film.overview}</p>
-        <p>Date della programmazione: {date[rand]}</p>
+      <div className={styles.btns}>
+        <div className={styles.btn}>Compra il bigletto</div>
+        <Link href="/films" className={styles.btn}>
+          Torna alle sale
+        </Link>
       </div>
-    </div>
+    </>
   );
 };
 
