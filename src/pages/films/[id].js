@@ -58,8 +58,7 @@ const Details = ({ film }) => {
             Layout="responsive"
           ></Image>
         </div>
-
-        <div className={styles.filmDatails}>
+        <div className={styles.filmDetails}>
           <h2>{film.original_title}</h2>
           <p>{film.overview}</p>
           <p>Date della programmazione: {date[rand]}</p>

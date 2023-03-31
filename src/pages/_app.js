@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const { asPath, route, pathname } = router;
+  const { pathname } = router;
 
   if (pathname === "/films" || pathname === "/") {
     return (
