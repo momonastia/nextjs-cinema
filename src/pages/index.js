@@ -39,9 +39,11 @@ export default function Home({ films }) {
             );
           })}
         </div>
+       
         <Link href="/films" className={styles.btn}>
           Alle sale
         </Link>
+        
       </main>
     </>
   );

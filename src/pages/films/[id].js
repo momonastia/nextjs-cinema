@@ -64,7 +64,7 @@ const Details = ({ film }) => {
           <p>Date della programmazione: {date[rand]}</p>
         </div>
       </div>
-      <div className={styles.btns}>
+      <div className={styles.cardsContainer}>
         <div className={styles.btn}>Compra il bigletto</div>
         <Link href="/films" className={styles.btn}>
           Torna alle sale
