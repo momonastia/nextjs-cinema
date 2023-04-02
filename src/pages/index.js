@@ -29,7 +29,7 @@ export default function Home({ films }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h2>Top films</h2>
+        <h2 className={styles.topFilmsTitle}>Top films</h2>
         <div className={styles.cardsContainer}>
           {films.results.map((film, i) => {
             return (
