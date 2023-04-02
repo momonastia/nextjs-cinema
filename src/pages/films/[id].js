@@ -11,7 +11,11 @@ export const getStaticPaths = async () => {
     "https://api.themoviedb.org/3/movie/now_playing?api_key=9b17c70efd646681f04f06f1a3fc40ed&page=2"
   );
   const data2 = await res2.json();
-  const dataAll = [...data.results, ...data2.results];
+  const res3 = await fetch(
+    "https://api.themoviedb.org/3/movie/popular?api_key=9b17c70efd646681f04f06f1a3fc40ed&language=en-US&page=2"
+  );
+  const data3 = await res3.json();
+  const dataAll = [...data.results, ...data2.results, ...data3.results];
 
   const paths = dataAll.map((film) => {
     return {
