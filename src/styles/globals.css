@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Heebo:wght@200;300&display=swap");
 
-body {
+html {
   background: rgb(0, 18, 41);
   background: linear-gradient(0deg, rgb(0, 18, 41) 30%, rgb(0, 71, 99) 100%);
+}
+
+body {
   color: rgb(240, 248, 255);
   font-family: "Comforter", cursive;
   font-family: "Heebo", sans-serif;
