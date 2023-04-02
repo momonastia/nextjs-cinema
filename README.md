@@ -35,7 +35,7 @@
     <img src='https://i.postimg.cc/mZtXvV28/mobile-11.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
     </div>
 </div>      
-</div> 
+
       
 <hr>
       
