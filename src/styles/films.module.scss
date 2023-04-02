@@ -22,8 +22,8 @@
 .btn {
   display: block;
   width: 150px;
-  padding: 8px 0;
-  margin: 5px 5px 40px 40px;
+  padding: 4px 0;
+  margin: 5px 5px 10px 10px;
   background: #ffc600;
   border-radius: 4px;
   color: #121618;
@@ -104,6 +104,8 @@
 @media screen and (min-width: 480px) {
   .singleFilm {
     flex-direction: row;
+    height: 62vh;
+    overflow: hidden;
   }
   .cardsTitle {
     text-align: left;
