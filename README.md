@@ -22,13 +22,6 @@
    <img src='https://i.postimg.cc/FHRXJhsx/mobile-home.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
     <img src='https://i.postimg.cc/5y3D6RhG/desktop-home.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
     </div>
-</div>      
-
-      
-<hr>
-      
-      <div>
-    
       <h4 align="left">Films page</h4>
   <div style="display: flex; gap: 5rem;  flex-direction: row;
         align-items: center; justify-content: center;">
@@ -36,9 +29,11 @@
     <img src='https://i.postimg.cc/mZtXvV28/mobile-11.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
     </div>
 </div>      
-</div> 
+
       
 <hr>
+      
+     
       
 
       
