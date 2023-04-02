@@ -46,7 +46,7 @@ const Details = ({ film }) => {
   let rand = Math.floor(Math.random() * date.length);
 
   return (
-    <>
+    <div className={styles.SingleMain}>
       <h4 className={styles.detailTitle}>Dettaglio film</h4>
       <div className={styles.singleFilm}>
         <div className={styles.imageContainer}>
@@ -70,7 +70,7 @@ const Details = ({ film }) => {
           Torna alle sale
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 
