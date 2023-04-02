@@ -1,3 +1,9 @@
+.topFilmsTitle {
+  color: #7d7d7d;
+  padding-left: 1rem;
+  text-align: center;
+}
+
 .cardsContainer {
   display: flex;
   gap: 20px;
@@ -42,4 +48,11 @@
   color: #ffc600;
 
   transition: all 0.5s;
+}
+
+@media screen and (min-width: 480px) {
+  .topFilmsTitle {
+    text-align: left;
+    padding-left: 5rem;
+  }
 }

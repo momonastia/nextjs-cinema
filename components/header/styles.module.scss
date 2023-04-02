@@ -1,0 +1,25 @@
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-items: flex-start;
+  font-size: 0.9rem;
+
+  > * {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.logo {
+  padding-left: 40px;
+  padding-top: 20px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffc600;
+  gap: 1rem;
+  font-family: "Comforter", cursive;
+}
