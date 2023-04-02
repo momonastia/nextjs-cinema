@@ -8,7 +8,7 @@
 
 <div>
   <h3 align="left">Description</h3>
-    <p  align="left"> Cinema web application, consists of Home page, films page and single film (details) </p>
+    <p  align="left"> Cinema web application, consists of Home page, films page and single film (details) page </p>
    <br>
 
 </div>          
@@ -19,7 +19,7 @@
   <div style="display: flex; gap: 5rem;  flex-direction: row;
         align-items: center; justify-content: center;">
    <img src='https://i.postimg.cc/FHRXJhsx/mobile-home.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
-   <https://i.postimg.cc/5y3D6RhG/desktop-home.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
+    <img src='https://i.postimg.cc/5y3D6RhG/desktop-home.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
     </div>
 </div>      
 </div> 
