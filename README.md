@@ -28,6 +28,12 @@
    <img src='https://i.postimg.cc/FzL7v0w7/mobile-10.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
     <img src='https://i.postimg.cc/mZtXvV28/mobile-11.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
     </div>
+    <h4 align="left">Film details page</h4>
+  <div style="display: flex; gap: 5rem;  flex-direction: row;
+        align-items: center; justify-content: center;">
+   <img src='https://i.postimg.cc/7YbpHwP8/mobile-12.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
+    <img src='https://i.postimg.cc/wjmZN2sw/mobile-13.png' style="height: 300px; padding: 20px; margin: 20px;" /> 
+    </div>
 </div>      
 
       
