@@ -15,7 +15,8 @@ export const getStaticPaths = async () => {
     "https://api.themoviedb.org/3/movie/popular?api_key=9b17c70efd646681f04f06f1a3fc40ed&language=en-US&page=2"
   );
   const data3 = await res3.json();
-  const dataAll = [...data.results, ...data2.results, ...data3.results];
+
+  const dataAll = [...data.results];
 
   const paths = dataAll.map((film) => {
     return {
