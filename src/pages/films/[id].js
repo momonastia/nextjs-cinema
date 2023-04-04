@@ -16,7 +16,7 @@ export const getStaticPaths = async () => {
   );
   const data3 = await res3.json();
 
-  const dataAll = [...data.results];
+  const dataAll = [...data.results, ...data2.results, ...data3.results];
 
   const paths = dataAll.map((film) => {
     return {
